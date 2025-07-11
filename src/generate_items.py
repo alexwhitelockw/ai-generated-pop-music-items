@@ -4,6 +4,7 @@ from openai import OpenAI
 import os
 import random
 import time
+from tqdm import tqdm
 
 
 load_dotenv()
@@ -79,8 +80,10 @@ if __name__ == "__main__":
 
     with open("data/prompts/prompts.json", "r") as f:
         base_prompts = json.load(f)
+        
+    final_questions = []
 
-    for reddit_post in reddit_posts:
+    for reddit_post in tqdm(reddit_posts):
         time.sleep(random.uniform(1,2))
         post_title = reddit_post.get('post_title')
         post_body = reddit_post.get('post_text')
@@ -118,6 +121,8 @@ if __name__ == "__main__":
         
         if final_question:
             final_question = final_question.replace("```json", "").replace("```", "").strip()
+            
+        final_questions.append(final_question)
         
-        with open("data/pop_questions/pop_questions.json", "+a") as f:
-            json.dump(final_question, f, indent=2)
+    with open("data/pop_questions/pop_questions.json", "a") as f:
+        json.dump(final_questions, f, indent=2)

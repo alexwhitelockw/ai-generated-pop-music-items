@@ -21,15 +21,15 @@ G --> H[Output Quiz]
 
 Key Features
 
-🎯 Triple-Question Generation
-Creates three distinct question types for comprehensive coverage
-🔍 Meta-Review System
-Refines questions using post-specific context
-� Intelligent Selection
-Chooses optimal final question through comparative analysis
-📊 Reddit Integration
-Processes real-world content from r/popheads
-Requirements
+🎯 Triple-Question Generation\
+Creates three distinct question types for comprehensive coverage\
+🔍 Meta-Review System\
+Refines questions using post-specific context\
+� Intelligent Selection\
+Chooses optimal final question through comparative analysis\
+📊 Reddit Integration\
+Processes real-world content from r/popheads\
+Requirements\
 
-Python 3.9+
-OpenAI-compatible API key (DeepSeek Chat recommended)
+Python 3.9+\
+OpenAI-compatible API key (DeepSeek Chat recommended)\
