@@ -29,7 +29,8 @@ Refines questions using post-specific context\
 Chooses optimal final question through comparative analysis\
 📊 Reddit Integration\
 Processes real-world content from r/popheads\
-Requirements\
 
-Python 3.9+\
-OpenAI-compatible API key (DeepSeek Chat recommended)\
+Requirements
+
+Python 3.9+
+OpenAI-compatible API key (DeepSeek Chat recommended)
