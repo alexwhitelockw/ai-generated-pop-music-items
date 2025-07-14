@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2 class="mb-4">Question {{ qid + 1 }}</h2>
+
+  <div class="card">
+    <div class="card-body">
+      <p class="card-text">{{ question["question_wording"] }}</p>
+
+      <form method="POST">
+        {% for opt in options %}
+          <div class="form-check mb-2">
+            <input class="form-check-input" type="radio" name="answer" id="opt{{ loop.index }}" value="{{ opt }}" required>
+            <label class="form-check-label" for="opt{{ loop.index }}">
+              {{ opt }}
+            </label>
+          </div>
+        {% endfor %}
+
+        <button type="submit" class="btn btn-primary mt-3">Next</button>
+      </form>
+    </div>
+  </div>
+{% endblock %}
