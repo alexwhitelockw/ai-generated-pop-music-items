@@ -29,3 +29,5 @@ Refines questions using post-specific context\
 Chooses optimal final question through comparative analysis\
 📊 Reddit Integration\
 Processes real-world content from r/popheads
+
+App hosted here: https://ai-generated-pop-music-items.onrender.com
