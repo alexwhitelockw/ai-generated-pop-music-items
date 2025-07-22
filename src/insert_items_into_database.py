@@ -13,7 +13,7 @@ logging.basicConfig(
 )
 
 if __name__ == "__main__":
-    db_path = Path("data/database/music_questions.db")
+    db_path = Path("basic-app/data/database/music_questions.db")
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
     

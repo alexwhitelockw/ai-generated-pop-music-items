@@ -75,7 +75,7 @@ def final_question_selector(
 if __name__ == "__main__":
     llm_client = OpenAI(api_key=os.getenv("API_KEY"), base_url="https://api.deepseek.com")
     
-    with open("data/reddit_posts/reddit_posts.json", "r") as f:
+    with open("data/reddit_posts/reddit_posts.json", "r", encoding="utf-8") as f:
         reddit_posts = json.load(f)
 
     with open("data/prompts/prompts.json", "r") as f:
